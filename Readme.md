@@ -1,4 +1,4 @@
-# # MB dotfiles (MacOS) ⚙️
+# MB dotfiles (MacOS) ⚙️
 
 This repository contains my configuration files for wezterm, starship & zsh.
 
