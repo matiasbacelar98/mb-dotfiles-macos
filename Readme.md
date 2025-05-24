@@ -2,9 +2,9 @@
 
 This repository contains my configuration files for wezterm, starship & zsh.
 
-- [.zshrc]()
-- [starship.toml]()
-- [wezterm.lua]()
+- [.zshrc](https://github.com/matiasbacelar98/mb-dotfiles-macos/blob/main/.zsh/.zshrc)
+- [starship.toml](https://github.com/matiasbacelar98/mb-dotfiles-macos/blob/main/.config/starship.toml)
+- [wezterm.lua](https://github.com/matiasbacelar98/mb-dotfiles-macos/blob/main/.config/wezterm/wezterm.lua)
 
 ## Links
 
