@@ -49,6 +49,14 @@ end
 starship init fish | source
 
 # =======================================
+# 🧰 Local tools
+# =======================================
+
+# Add user-installed CLI tools to the end of PATH so they do not
+# take precedence over tools in earlier PATH entries.
+fish_add_path --append "$HOME/.local/bin"
+
+# =======================================
 # 🔄 Utilities
 # =======================================
 
