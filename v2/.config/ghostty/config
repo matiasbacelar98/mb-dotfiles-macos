@@ -1,0 +1,17 @@
+# ─────────────────────────────────────
+# 🔤 Font
+# ─────────────────────────────────────
+font-family = JetBrains Mono
+font-size = 20
+
+# ─────────────────────────────────────
+# 🎨 Theme
+# ─────────────────────────────────────
+theme = Catppuccin Macchiato
+
+# ─────────────────────────────────────
+# ⚙️ Miscellaneous
+# ─────────────────────────────────────
+mouse-hide-while-typing = true
+window-decoration = true
+macos-option-as-alt = true
