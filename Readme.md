@@ -1,16 +1,42 @@
-# MB dotfiles (MacOS) ⚙️
+# MB dotfiles (macOS) ⚙️
 
-This repository contains my configuration files for wezterm, starship & zsh.
+My macOS configuration files, kept one folder per setup. Each version is a
+complete, self-contained snapshot: terminal, shell and prompt.
 
-- [.zshrc](https://github.com/matiasbacelar98/mb-dotfiles-macos/blob/main/.zsh/.zshrc)
-- [starship.toml](https://github.com/matiasbacelar98/mb-dotfiles-macos/blob/main/.config/starship.toml)
-- [wezterm.lua](https://github.com/matiasbacelar98/mb-dotfiles-macos/blob/main/.config/wezterm/wezterm.lua)
+| Version | Terminal | Shell | Prompt   | Status   |
+| ------- | -------- | ----- | -------- | -------- |
+| [v1](v1/) | WezTerm  | zsh   | Starship | Archived |
+| v2      | Ghostty  | fish  | Starship | Current  |
 
-## Links
+## v1 — WezTerm + zsh + Starship
 
-- [Wezterm](https://wezterm.org/)
-- [Starship](https://starship.rs/)
-- [ZSH Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-- [ZSH Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-- [ZSH Eza](https://github.com/z-shell/zsh-eza)
-- Nerd Font (it's for the icons) in my case i use [CaskaydiaCove](https://www.programmingfonts.org/#cascadia-code)
+```
+v1/
+├── .config/
+│   ├── starship.toml            Prompt: nord palette, git status, language versions
+│   └── wezterm/
+│       ├── wezterm.lua          Entry point: font, colors, blur, key/mouse bindings
+│       ├── constants.lua        Mouse and key bindings, background image paths
+│       ├── scripts.lua          gui-startup hook: centers the window at 70% of the screen
+│       └── assets/              Blurred background images (unused, disabled in wezterm.lua)
+└── .zsh/
+    ├── .zshrc                   nvm, history, plugins, eza aliases, completion, Starship init
+    ├── general.zsh              reload, histgrep, f, pingtest
+    ├── copypath.zsh             Copies the current or given path to the clipboard
+    └── command-not-found.zsh    Suggests a Homebrew formula for an unknown command
+```
+
+Destination on the machine:
+
+- `v1/.config/starship.toml` → `~/.config/starship.toml`
+- `v1/.config/wezterm/` → `~/.config/wezterm/`
+- `v1/.zsh/.zshrc` → `~/.zshrc`
+- `v1/.zsh/*.zsh` → `~/.zsh/scripts/`
+
+`.zshrc` also sources `~/.zsh/plugins/`, which is not tracked here. Clone
+zsh-autosuggestions and zsh-syntax-highlighting into that folder before starting
+a new shell.
+
+## v2 — Ghostty + fish + Starship
+
+Not added yet.
